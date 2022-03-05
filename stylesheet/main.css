@@ -1,0 +1,24 @@
+body {
+    grid-template-areas: "header header header header"
+    "aside-left main main aside-right";
+}
+
+header {
+    grid-area: header;
+    background: red;
+}
+
+main {
+    grid-area: main;
+    background: yellow;
+}
+
+aside.left {
+    grid-area: aside-left;
+    background: green;
+}
+
+aside.right {
+    grid-area: aside-right;
+    background: blue;
+}
