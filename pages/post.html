@@ -34,11 +34,11 @@
         aside
     </aside>
 
-    <main style="min-height:200vh;" class="grid grid-feed">
+    <main style="min-height:100vh;" class="grid grid-feed mg-btm-s">
         <!-- the post -->
-        <article class="card-post card-shadow-xs flx flx-column mg-top-lg pd-xs">
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
             <div class="flx flx-min-center mg-btm-s">
-                <img srcset="./assets/prof-m.jpg 100w,
+                <img srcset="../assets/prof-m.jpg 100w,
                 ./assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
                 <div class="flx flx-column">
                     <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
@@ -61,23 +61,35 @@
             </div>
         </article>
         <!-- a small post for my reply -->
-        <article>
-            <img />
-            <p>relpying to above person</p>
-            <textarea>
-                reply here
-            </textarea>
-            <button>reply</button>
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+            <div class="flx flx-maj-start flx-min-center mg-btm-xs">
+                <img srcset="../assets/prof-m.jpg 100w,
+                ./assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <textarea class="input txt-md mg-left-xs pd-xs" placeholder="reply to @vinay.foolhardy..."></textarea>
+            </div>
+            <button class="btn-txt txt-primary txt-md pd-xs">reply</button>
         </article>
         <!-- other replies -->
-        <article>
-            <img />
-            <p>name</p>
-            <p>username</p>
-            <p>rpeply text</p>
-            <p>time when replied</p>
-            <div>
-                <button>like</button>
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+            <div class="flx flx-min-center mg-btm-s">
+                <img srcset="../assets/prof-m.jpg 100w,
+                ./assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <div class="flx flx-column">
+                    <p class="txt-md txt-primary txt-cap mg-left-xs">binay bumar</p>
+                    <p class="txt-md txt-off-secondary mg-left-xs">replied to @vinay.foolhardy</p>
+                </div>
+            </div>
+            <p class="pd-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+                asperiores magnam voluptates fugiat iure at, ratione, esse laboriosam ptatum maxime neque quam quaerat?
+            </p>
+            <p class="txt-off-primary txt-md txt-cap mg-top-xs mg-left-xs">1:45am 13 Dec 2020</p>
+            <div class="flx flx-maj-end mg-top-xs mg-right-xs">
+                <div class="flx">
+                    <p class="txt-md txt-primary mg-right-xs">2</p>
+                    <button class="btn-txt txt-md txt-lcase">
+                        like
+                    </button>
+                </div>
             </div>
         </article>
     </main>

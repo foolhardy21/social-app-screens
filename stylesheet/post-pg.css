@@ -1,9 +1,15 @@
 
 .grid-feed {
     grid-template-columns: 1fr;
+    grid-template-rows: max-content;
     gap: 1rem;
 }
 
 .card-post {
     height: max-content;
+}
+
+textarea {
+    width: 100%;
+    height: 8rem;
 }
