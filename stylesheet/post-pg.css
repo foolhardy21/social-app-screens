@@ -1,0 +1,9 @@
+
+.grid-feed {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card-post {
+    height: max-content;
+}
