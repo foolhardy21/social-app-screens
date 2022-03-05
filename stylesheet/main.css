@@ -11,14 +11,12 @@ header {
 
 main {
     grid-area: main;
-    width: 1fr;
     border-color: yellow;
 }
 
 aside.left {
     grid-area: aside-left;
     border-color: green;
-    width: 20rem;
     height: 100vh;
     overflow-y: auto;
     top: 0.5rem;
@@ -27,7 +25,6 @@ aside.left {
 aside.right {
     grid-area: aside-right;
     border-color: blue;
-    width: 20rem;
     height: 100vh;
     overflow-y: auto;
     top: 0.5rem;

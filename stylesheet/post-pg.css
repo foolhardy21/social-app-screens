@@ -1,4 +1,17 @@
 
+
+main {
+    width: 1fr;
+}
+
+aside.left {
+    width: 20rem;
+}
+
+aside.right {
+    width: 20rem;
+}
+
 .grid-feed {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: max-content;
