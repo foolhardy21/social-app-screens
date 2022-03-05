@@ -1,24 +1,33 @@
 body {
     grid-template-areas: "header header header header"
     "aside-left main main aside-right";
+    gap: 1rem;
 }
 
 header {
     grid-area: header;
-    background: red;
+    border-color: red;
 }
 
 main {
     grid-area: main;
-    background: yellow;
+    border-color: yellow;
 }
 
 aside.left {
     grid-area: aside-left;
-    background: green;
+    border-color: green;
+    min-width: 16rem;
+    height: 100vh;
+    overflow-y: auto;
+    top: 0.5rem;
 }
 
 aside.right {
     grid-area: aside-right;
-    background: blue;
+    border-color: blue;
+    min-width: 16rem;
+    height: 100vh;
+    overflow-y: auto;
+    top: 0.5rem;
 }
