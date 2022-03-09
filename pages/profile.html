@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel='stylesheet' href='../stylesheet/style.css' />
     <link rel='stylesheet' href='../stylesheet/profile.css' />
-    <title>Post Page</title>
+    <title>Profile Page</title>
 </head>
 
 <body class="grid">
@@ -42,25 +42,37 @@
         left aside
     </aside>
 
-    <main class="grid grid-feed mg-btm-s">
+    <main class="grid grid-feed mg-btm-s pd-left-xxlg pd-right-xxlg">
 
         <!-- user profile -->
 
         <article class="card-shadow-xs pd-s">
-            <div class="flx flx-min-center">
-                <img srcset="../assets/prof-m.jpg 100w,
-                        ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
-                    class="brd-full img-fit-cover" />
-                <div class="flx flx-column mg-left-s">
-                    <p class="txt-md txt-primary txt-cap">vinay kumar</p>
-                    <p class="txt-md txt-primary">@vinay.foolhardy</p>
-                    <p class="txt-md txt-primary txt-cap mg-btm-xs">08 Feb 1999</p>
-                    <p class="txt-md txt-primary txt-cap mg-btm-xs">pune</p>
-                    <p class="txt-md txt-primary txt-cap mg-btm-xs">Lorem ipsum dolor sit amet.</p>
-                </div>
+
+            <div class="pos-relative">
+
+                <img id="img-profile-bg" src="../assets/profile-bg.jpg" class="img-fit-cover" />
+
+                <img id="img-profile" srcset="../assets/prof-m.jpg 100w,
+                            ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                    class="brd-full b-solid b-secondary img-fit-cover pos-absolute" />
             </div>
+
+            <div class="flx flx-column flx-min-center">
+
+                <p class="txt-md txt-primary txt-cap">vinay kumar</p>
+
+                <p class="txt-md txt-primary mg-btm-xs">@vinay.foolhardy</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">08 Feb 1999</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">pune</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">Lorem ipsum dolor sit amet.</p>
+            </div>
+
             <div class="flx flx-maj-end">
-                <button class="btn-solid open-modal txt-secondary bg-secondary pd-xs txt-cap">edit profile</button>
+                <button class="btn-solid open-modal txt-secondary txt-md bg-secondary pd-xs txt-cap">edit
+                    profile</button>
             </div>
         </article>
 
@@ -97,16 +109,33 @@
 
         <article class="card-post card-shadow-xs flx flx-column pd-xs">
 
-            <div class="flx flx-min-center mg-btm-s">
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
 
-                <img srcset="../assets/prof-m.jpg 100w,
-                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <div class="flx flx-min-center">
 
-                <div class="flx flx-column">
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
 
-                    <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+                    <div class="flx flx-column">
 
-                    <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
 
                 </div>
 
@@ -139,16 +168,33 @@
 
         <article class="card-post card-shadow-xs flx flx-column pd-xs">
 
-            <div class="flx flx-min-center mg-btm-s">
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
 
-                <img srcset="../assets/prof-m.jpg 100w,
-                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <div class="flx flx-min-center">
 
-                <div class="flx flx-column">
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
 
-                    <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+                    <div class="flx flx-column">
 
-                    <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
 
                 </div>
 
@@ -181,16 +227,33 @@
 
         <article class="card-post card-shadow-xs flx flx-column pd-xs">
 
-            <div class="flx flx-min-center mg-btm-s">
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
 
-                <img srcset="../assets/prof-m.jpg 100w,
-                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <div class="flx flx-min-center">
 
-                <div class="flx flx-column">
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
 
-                    <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+                    <div class="flx flx-column">
 
-                    <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
 
                 </div>
 
@@ -223,16 +286,33 @@
 
         <article class="card-post card-shadow-xs flx flx-column pd-xs">
 
-            <div class="flx flx-min-center mg-btm-s">
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
 
-                <img srcset="../assets/prof-m.jpg 100w,
-                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px" class="brd-full img-fit-cover" />
+                <div class="flx flx-min-center">
 
-                <div class="flx flx-column">
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
 
-                    <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+                    <div class="flx flx-column">
 
-                    <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
 
                 </div>
 

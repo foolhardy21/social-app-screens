@@ -16,6 +16,16 @@ aside.right {
     gap: 1rem;
 }
 
+#img-profile-bg {
+    height: 15rem;
+    width: 100%;
+}
+
+#img-profile {
+    top: 5px;
+    left: 40%;
+}
+
 .card-post {
     height: max-content;
 }
