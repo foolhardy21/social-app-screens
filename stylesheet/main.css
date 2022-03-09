@@ -25,7 +25,7 @@ aside.left {
 aside.right {
     grid-area: aside-right;
     border-color: blue;
-    height: 100vh;
+    height: 70vh;
     overflow-y: auto;
     top: 0.5rem;
 }
