@@ -6,10 +6,14 @@ main {
 
 aside.left {
     width: 20rem;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 aside.right {
     width: 20rem;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 .grid-feed {
@@ -25,4 +29,10 @@ aside.right {
 textarea {
     width: 100%;
     height: 8rem;
+}
+
+#aside-item:hover {
+    cursor: pointer;
+    background: var(--clr-off-primary);
+    font-weight: 600;
 }
