@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='../stylesheet/style.css' />
+    <link rel='stylesheet' href='../stylesheet/profile.css' />
+    <title>Profile Page</title>
+</head>
+
+<body class="grid">
+
+    <header class="b-solid flx flx-maj-even flx-min-center pd-top-md pd-btm-md">
+
+        <p class="txt-lg txt-ucase txt-primary">sneakerhood</p>
+
+        <nav class="flx flx-center">
+
+            <button class="btn-txt txt-primary txt-md txt-lcase mg-right-s">
+                profile
+            </button>
+
+            <button class="btn-txt txt-primary txt-md txt-lcase mg-right-s">
+                feed
+            </button>
+
+            <button class="btn-txt txt-primary bg-primary txt-md pd-xs txt-lcase">logout</button>
+
+        </nav>
+
+        <span class="material-icons icon-primary">
+            bedtime
+        </span>
+
+    </header>
+
+    <aside class="left pos-sticky">
+
+        <p class="txt-md txt-primary txt-cap mg-left-s mg-btm-s">bookmarks</p>
+
+        <ul class="mg-left-md mg-btm-s">
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+        </ul>
+
+        <p class="txt-md txt-primary txt-cap mg-left-s mg-btm-s">drafts</p>
+
+        <ul class="mg-left-md mg-btm-s">
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">Lorem ipsum dolor.....</p>
+            </li>
+        </ul>
+
+    </aside>
+
+    <main class="grid grid-feed mg-btm-s pd-left-xxlg pd-right-xxlg">
+
+        <!-- user profile -->
+
+        <article class="card-shadow-xs pd-s">
+
+            <div class="pos-relative">
+
+                <img id="img-profile-bg" src="../assets/profile-bg.jpg" class="img-fit-cover" />
+
+                <img id="img-profile" srcset="../assets/prof-m.jpg 100w,
+                            ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                    class="brd-full b-solid b-secondary img-fit-cover pos-absolute" />
+            </div>
+
+            <div class="flx flx-column flx-min-center">
+
+                <p class="txt-md txt-primary txt-cap">vinay kumar</p>
+
+                <p class="txt-md txt-primary mg-btm-xs">@vinay.foolhardy</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">08 Feb 1999</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">pune</p>
+
+                <p class="txt-md txt-primary txt-cap mg-btm-xs">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="flx flx-maj-end">
+                <button
+                    class="btn-outlined open-modal b-solid b-primary txt-primary txt-md bg-primary pd-xs txt-cap">edit
+                    profile</button>
+            </div>
+        </article>
+
+        <!-- edit profile modal -->
+
+        <section class='flx flx-center modal-container dis-hidden'>
+            <article class="modal-md bg-primary card-shadow-xs pd-s">
+                <div class="flx flx-min-center mg-btm-s">
+                    <img srcset="../assets/prof-m.jpg 100w,
+                            ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full img-fit-cover" />
+                    <div class="flx flx-column mg-left-s">
+                        <input type="text" placeholder="vinay kumar"
+                            class="input input-md txt-md txt-primary txt-cap mg-btm-xs" /></input>
+                        <input type="text" placeholder="@vinay.foolhardy"
+                            class="input input-md txt-md txt-primary mg-btm-xs" />
+                        <input type="date" placeholder="08 Feb 1999"
+                            class="input input-md txt-md txt-primary txt-cap mg-btm-xs" />
+                        <input type="text" placeholder="pune"
+                            class="input input-md txt-md txt-primary txt-cap mg-btm-xs" />
+                        <input type="text" placeholder="Lorem ipsum dolor sit amet"
+                            class="input input-md txt-md txt-primary txt-cap mg-btm-xs" />
+                    </div>
+                </div>
+                <div class="flx flx-maj-end">
+                    <button
+                        class="btn-outlined dialog-action-btn txt-primary bg-primary b-solid b-primary pd-xs txt-cap mg-right-xs">cancel</button>
+                    <button class="btn-solid dialog-action-btn txt-secondary bg-secondary pd-xs txt-cap">done</button>
+                </div>
+            </article>
+        </section>
+
+        <div class="flx flx-maj-end">
+            <button id="btn-post" class="btn-solid bg-secondary pd-xs">
+                <span class="material-icons icon-secondary">
+                    create
+                </span>
+            </button>
+        </div>
+
+        <section class='flx flx-center modal-container modal2-container dis-hidden'>
+            <article class="modal-md bg-primary card-shadow-xs pd-s pos-relative">
+                <span class="material-icons dialog-action-btn dialog2-action-btn icon-primary pos-absolute tr-1">
+                    close
+                </span>
+                <div class="flx flx-min-center mg-btm-s">
+                    <textarea type="text" placeholder="type here...."
+                        class="input input-md txt-md txt-primary txt-cap mg-btm-xs"></textarea>
+                </div>
+                </div>
+                <div class="flx flx-maj-end">
+                    <button
+                        class="btn-outlined dialog-action-btn dialog2-action-btn txt-primary bg-primary b-solid b-primary pd-xs txt-cap mg-right-xs">save
+                        as draft</button>
+                    <button
+                        class="btn-solid dialog-action-btn dialog2-action-btn txt-secondary bg-secondary pd-xs txt-cap">post</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- the posts -->
+
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
+
+                <div class="flx flx-min-center">
+
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
+
+                    <div class="flx flx-column">
+
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="pd-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+                asperiores magnam voluptates fugiat iure at, ratione, esse laboriosam dolores alias explicabo! Nam
+                cumque tempore possimus dicta autem delectus rem nemo, aperiam id modi omnis eveniet laborum enim
+                aspernatur unde repellendus distinctio eum aliquid voluptatibus. Voluptatum maxime neque quam
+                quaerat?
+            </p>
+
+            <p class="txt-off-primary txt-md txt-cap mg-top-xs mg-left-xs">11:45pm 12 Dec 2020</p>
+
+            <div class="flx flx-maj-end mg-top-xs mg-right-xs">
+
+                <div class="flx">
+
+                    <p class="txt-md txt-primary mg-right-xs">12</p>
+
+                    <button class="btn-txt txt-md txt-lcase">
+                        like
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
+
+                <div class="flx flx-min-center">
+
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
+
+                    <div class="flx flx-column">
+
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="pd-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+                asperiores magnam voluptates fugiat iure at, ratione, esse laboriosam dolores alias explicabo! Nam
+                cumque tempore possimus dicta autem delectus rem nemo, aperiam id modi omnis eveniet laborum enim
+                aspernatur unde repellendus distinctio eum aliquid voluptatibus. Voluptatum maxime neque quam
+                quaerat?
+            </p>
+
+            <p class="txt-off-primary txt-md txt-cap mg-top-xs mg-left-xs">11:45pm 12 Dec 2020</p>
+
+            <div class="flx flx-maj-end mg-top-xs mg-right-xs">
+
+                <div class="flx">
+
+                    <p class="txt-md txt-primary mg-right-xs">12</p>
+
+                    <button class="btn-txt txt-md txt-lcase">
+                        like
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
+
+                <div class="flx flx-min-center">
+
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
+
+                    <div class="flx flx-column">
+
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="pd-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+                asperiores magnam voluptates fugiat iure at, ratione, esse laboriosam dolores alias explicabo! Nam
+                cumque tempore possimus dicta autem delectus rem nemo, aperiam id modi omnis eveniet laborum enim
+                aspernatur unde repellendus distinctio eum aliquid voluptatibus. Voluptatum maxime neque quam
+                quaerat?
+            </p>
+
+            <p class="txt-off-primary txt-md txt-cap mg-top-xs mg-left-xs">11:45pm 12 Dec 2020</p>
+
+            <div class="flx flx-maj-end mg-top-xs mg-right-xs">
+
+                <div class="flx">
+
+                    <p class="txt-md txt-primary mg-right-xs">12</p>
+
+                    <button class="btn-txt txt-md txt-lcase">
+                        like
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="card-post card-shadow-xs flx flx-column pd-xs">
+
+            <div class="flx flx-maj-stretch flx-min-center mg-btm-s">
+
+                <div class="flx flx-min-center">
+
+                    <img srcset="../assets/prof-m.jpg 100w,
+                    ../assets/prof-s.jpg 60w" sizes="(max-width: 768px) 60px, 100px"
+                        class="brd-full b-solid b-off-primary img-fit-cover" />
+
+                    <div class="flx flx-column">
+
+                        <p class="txt-md txt-primary txt-cap mg-left-xs">vinay kumar</p>
+
+                        <p class="txt-md txt-off-primary mg-left-xs">@vinay.foolhardy</p>
+
+                    </div>
+
+                </div>
+
+                <div class="flx">
+
+                    <button class="btn-txt txt-md bg-primary mg-right-xs">
+                        edit
+                    </button>
+
+                    <button class="btn-solid txt-md txt-ucase bg-err txt-secondary pd-xs">
+                        delete
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="pd-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis
+                asperiores magnam voluptates fugiat iure at, ratione, esse laboriosam dolores alias explicabo! Nam
+                cumque tempore possimus dicta autem delectus rem nemo, aperiam id modi omnis eveniet laborum enim
+                aspernatur unde repellendus distinctio eum aliquid voluptatibus. Voluptatum maxime neque quam
+                quaerat?
+            </p>
+
+            <p class="txt-off-primary txt-md txt-cap mg-top-xs mg-left-xs">11:45pm 12 Dec 2020</p>
+
+            <div class="flx flx-maj-end mg-top-xs mg-right-xs">
+
+                <div class="flx">
+
+                    <p class="txt-md txt-primary mg-right-xs">12</p>
+
+                    <button class="btn-txt txt-md txt-lcase">
+                        like
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <aside class="right pos-sticky">
+
+        <p class="txt-md txt-primary txt-cap mg-btm-s">followers</p>
+
+        <ul class="mg-left-s mg-btm-s">
+            <li id="aside-item" class="flx flx-min-center mg-btm-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center mg-btm-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center mg-btm-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center mg-btm-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+        </ul>
+
+        <p class="txt-md txt-primary txt-cap">following</p>
+
+        <ul class="mg-left-s mg-btm-s">
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+            <li id="aside-item" class="flx flx-min-center pd-xs">
+                <img src="../assets/prof-xs.jpg" class="brd-full mg-right-xs" />
+                <p class="txt-md txt-primary">binay</p>
+            </li>
+
+        </ul>
+
+    </aside>
+
+</body>
+<script src="../scripts/profile-pg.js"></script>
+
+</html>
