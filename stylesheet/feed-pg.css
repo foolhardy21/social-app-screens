@@ -5,10 +5,16 @@ main {
 
 aside.left {
     width: 20rem;
+    height: 70vh;
+    overflow-y: auto;
+    top: 1rem;
 }
 
 aside.right {
     width: 20rem;
+    height: 70vh;
+    overflow-y: auto;
+    top: 1rem;
 }
 
 .grid-feed {
@@ -24,4 +30,10 @@ aside.right {
 .card-post:hover {
     cursor: pointer;
     box-shadow: 0 0 5px -2px;
+}
+
+#aside-item:hover {
+    cursor: pointer;
+    background: var(--clr-off-primary);
+    font-weight: 600;
 }
