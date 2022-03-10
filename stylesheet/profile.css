@@ -29,3 +29,9 @@ aside.right {
 .card-post {
     height: max-content;
 }
+
+#aside-item:hover {
+    background: var(--clr-off-primary);
+    font-weight: 600;
+    cursor: pointer;
+}
